@@ -1,0 +1,45 @@
+body{
+	padding:0px;
+	margin:0px;
+}
+
+header{
+	display: flex;
+	justify-content: center;
+}
+
+.all_header{
+	position:fixed;
+	z-index: 3;
+    border: 0;
+    background-color: white;
+    /*opacity: .9;*/
+    float: left;
+    width: 1519px;
+    text-align: center;
+}
+
+./*logo,*/ .top_menu{
+	display:  inline-block;
+	vertical-align: middle;
+}
+
+.top_menu li{
+	display:  inline-block;
+	vertical-align: middle;
+}
+
+.top_menu a{
+	vertical-align: middle;
+	font-family: Arial;
+	font-size: 20px;
+	color: black;
+	text-decoration: none;
+	margin-left: 50px;
+	margin-right: 50px;
+	font-weight: 600;
+}
+
+/*.logo{
+	vertical-align: middle;
+}*/

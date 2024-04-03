@@ -4,16 +4,83 @@ body{
 	background-color: black;
 	background-image: url('../images/background_main.png');
 	background-attachment: fixed;
-	height: 1100px;
+	height: 1900px;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+header{
+	display: flex;
+	justify-content: center;
+}
+
+.all_header{
+	position:fixed;
+	z-index: 3;
+    border: 0;
+    background-color: white;
+    /*opacity: .9;*/
+    float: left;
+    width: 1519px;
+    text-align: center;
+    box-shadow: 0px 0px 50px 2px #8c8c8c;
+}
+
+.top_menu{
+	display:  inline-block;
+	vertical-align: middle;
+}
+
+.top_menu li{
+	display:  inline-block;
+	vertical-align: middle;
+}
+
+.top_menu a{
+	vertical-align: middle;
+	font-family: Arial;
+	font-size: 20px;
+	color: black;
+	text-decoration: none;
+	margin-left: 100px;
+	margin-right: 100px;
+	font-weight: 600;
+}
+
+td, th {
+	vertical-align:top;
+}
+
+.header_text {
+	color: black;
+	transition: all 0.2s ease-out;
+}
+
+.header_text:hover {
+	color: #0e84b4;
+	transition: all 0.2s ease-out;
+}
+
+table{
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.pattern{
+	width: 100px;
+	width: 60px;
+	padding:15px;
 }
 
 .headertitle {
-	padding-top:20px;
     font-family: Arial; /*шрифт*/
 	font-size: 45px;/*размер в пикселях*/
 	font-weight: 100; /*толщина букв* от 100 до 1000*/
-	color: white;
+	color: #000;
 	text-align: center;
+	font-weight: 700;
 
 	text-decoration: underline ;/*настройка подчеркивания*/
 	text-decoration-color: #0e84b4;
@@ -21,35 +88,35 @@ body{
 	text-decoration-thickness: 4px;
 }
 
-.rectangle {
-	margin-top: 250px;
+.rectangle{
+	margin-top: 350px;
 	margin-bottom: 0px;
 	left:  auto;
 	right: auto;
     height: 620px;
-    background-color: #0a0a0a;
+    background-color: #fff;
     box-shadow: 0px 0px 50px 2px #0e84b4;
 }
 
 .map{
-	margin: 25px;
-	margin-bottom: 25px;
-	height: 500px;
+	margin: 10px 0 10px 0;
+	height: 490px;
 	left:  auto;
 	right: auto;
  	text-align: center;
  	font-family: Arial;
- 	color: white;
-    background-color: #4f4f4f;
+ 	color: black;
+    background-color: #d1d1d1;
 }
 
 .headertitle2 {
-	padding-top:20px;
+	padding-top:70px;
     font-family: Arial; /*шрифт*/
-	font-size: 25px;/*размер в пикселях*/
-	font-weight: 100; /*толщина букв* от 100 до 1000*/
-	color: white;
+	font-size: 30px;/*размер в пикселях*/
+	font-weight: 600; /*толщина букв* от 100 до 1000*/
+	color: #000;
 	text-align: center;
+	text-shadow: 0px 0px 25px #dedede;
 
 	text-decoration: underline ;/*настройка подчеркивания*/
 	text-decoration-color: #0e84b4;
@@ -79,30 +146,38 @@ body{
 
 .card{
 	display: inline-block;
-	background-color: #0a0a0a;
+	background-color: #fff;
 	width: 300px;
 	height: 230px;
 	border-radius: 15px;
 	padding: 10px;
-	box-shadow: 0px 0px 25px 2px #3b3b3b;
+	box-shadow: 0px 0px 15px 5px #8a8a8a;
 
 	transition: all 0.3s ease-out;
 }
 
 .card:hover {
 	align-content: center;
-	background-color: #000;
+	background-color: #F3F3F3;
 	width: 300px;
 	height: 230px;
-	border-radius: 15px;
+	border-radius: 10px;
 	padding: 10px;
-	box-shadow: 0px 0px 25px 2px #0e84b4;
+	box-shadow: 0px 0px 15px 2px #0e84b4;
 
 	transform: scale(1.07);
 	-webkit-transform: scale(1.07);
 	-ms-transform: scale(1.07);
 }
 
+.card img{
+	transition: all 0.3s ease-out;
+}
+
+.card:hover img {
+	border-radius: 6px;
+
+}
 .card-img{
 	width: 300px;
 	border-radius: 10px;
@@ -112,7 +187,7 @@ body{
 	text-decoration: none;
 	margin-top: 3px;
  	font-family: Arial;
- 	color: white;
- 	font-size: 22px;
+ 	color: #000;
+ 	font-size: 20px;
  	text-align: center;
 }

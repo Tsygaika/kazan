@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,19 +10,41 @@
 </head>
 <body>
 	<header>
-			<div class="all_header">
-				<div class="top_menu">
-					<ul>
-						<li><a href="index.html">Главная</a></li>
-						<!-- <div class="logo">
-							<img src='icon.png' alt='' width="25">
-						</div> -->
-						<li><a href="#top">Страница 1</a></li>
-						<li><a href="index_3.html">Страница 2</a></li>
-					</ul>
-				</div>
+		<div class="all_header">
+			<div class="top_menu">
+				<ul>
+					<li><a class="header_text" href="index.html">Главная</a></li>
+					<li><a class="header_text" href="index.html#headertitle2">Сооружения</a></li>
+				</ul>
 			</div>
-		</header>
-		<img src='images/photo2.png' alt='' width="1150">
+		</div>
+	</header>
+
+	<div class="images">
+	    <img src="slider/photo1.png" alt="Image 1" class="image">
+	    <img src="slider/photo2.png" alt="Image 2" class="image">
+	    <img src="slider/photo3.png" alt="Image 3" class="image">
+	</div>
+
+	<div class="images">
+	    <img src="slider/photo4.png" alt="Image 1" class="image">
+	    <img src="slider/photo5.png" alt="Image 2" class="image">
+	    <img src="slider/photo6.png" alt="Image 3" class="image">
+	    <img src="slider/photo7.png" alt="Image 3" class="image">
+	</div>
+
+	<div id="slider" class="slider">
+	    <button class="close_button" onclick="closeSlider()">✕</button>
+
+	    <img id="button_left" onclick="prevSlide()" src="slider/left.png" alt="" style="left: 50px" class="button">
+
+	    <img id="button_right" onclick="nextSlide()" src="slider/right.png" alt="" style="right: 95px" class="button">
+
+	    <div class="slider_content">
+	        <img src="" alt="" id="slider_image" style="max-height: 600px;">
+	    </div>
+	</div>
+
+	<script src="slider/script.js"></script>
 </body>
 </html>
